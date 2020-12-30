@@ -198,7 +198,7 @@ def test(cfg,
 
 if __name__ == '__main__':
 
-    os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+    os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
     parser = argparse.ArgumentParser(prog='test_map.py')
     parser.add_argument('--batch-size', type=int, default=12, help='size of each image batch')

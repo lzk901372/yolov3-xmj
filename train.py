@@ -480,13 +480,3 @@ if __name__ == '__main__':
 
             # Plot results
             # plot_evolution_results(hyp)
-
-    exp_num = input('Experiment Number: ')
-    time = time.strftime('%Y年%m月%d日%H时%M分%S秒', time.localtime())
-    train_result_dir = f'train/trainResults/{exp_num}_{time}/'
-    import os, shutil
-    try:
-        shutil.move('results.txt', train_result_dir + 'results.txt')
-        shutil.move('results*.png', train_result_dir + 'results*.png')
-    except:
-        print('No corresponding files. Passing...')

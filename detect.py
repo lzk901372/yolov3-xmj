@@ -189,7 +189,7 @@ def detect(cfg,
 
 if __name__ == '__main__':
 
-    os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+    os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
     exp_num = input('Experiment Number: ')
     output = f"output/{exp_num}_{time.strftime('%Y年%m月%d日%H时%M分%S秒', time.localtime())}"
